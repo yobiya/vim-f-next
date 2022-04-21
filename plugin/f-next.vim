@@ -8,10 +8,6 @@ let g:loaded_f_next = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-nmap <C-f> :call FNext_n_f()<CR>
-vmap <C-f> :call FNext_v_f()<CR>
-omap <C-f> :call FNext_o_f()<CR>
-
 fu! FNext_n_f()
   let target_index = s:find_target_index()
   if (target_index < 0)
